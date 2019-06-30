@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //components
 import Books from './components/Books';
+import Authors from './components/Authors';
 import Navbar from './components/Navbar';
 
 //Apollo Client Setup
@@ -22,6 +23,7 @@ class App extends Component {
             <div className='container'>
               <Switch>
                 <Route path='/' exact component={Books} />
+                <Route path='/authors' exact component={Authors} />
               </Switch>
             </div>
           </div>
