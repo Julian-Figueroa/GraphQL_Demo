@@ -115,8 +115,6 @@ form button {
 }
 
 .btn-primary,
-.bg-primary,
-.badge-primary,
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
@@ -188,13 +186,13 @@ form button {
 }
 
 .navbar a {
-  color: #fff;
+  color: black;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
 .navbar a:hover {
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 .navbar .welcome span {
@@ -222,11 +220,7 @@ ul {
 }
 
 a:hover {
-  color: #666;
-}
-
-li {
-  color: #666;
+  color: white;
 }
 
 .btn-link {
