@@ -27,7 +27,7 @@ class AddAuthor extends Component {
 
   render() {
     return (
-      <form id='add-book' onSubmit={this.submitForm.bind(this)}>
+      <form id='add-author' onSubmit={this.submitForm.bind(this)}>
         <div className='field'>
           <label>Author Name:</label>
           <input
