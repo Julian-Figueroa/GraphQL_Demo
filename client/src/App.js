@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import ApolloClient from 'apollo-boost';
+// import ApolloClient from 'apollo-boost';
+import { createHttpLink } from 'apollo-link-http';
+import ApolloClient from 'apollo-client';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -10,7 +13,8 @@ import Navbar from './components/Navbar';
 
 //Apollo Client Setup
 const client = new ApolloClient({
-  uri: '/graphql'
+  link: createHttpLink({ uri: '/graphql' }),
+  cache: new InMemoryCache()
 });
 
 class App extends Component {
