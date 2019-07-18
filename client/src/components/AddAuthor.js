@@ -20,8 +20,8 @@ class AddAuthor extends Component {
       variables: {
         name: this.state.name,
         age: parseInt(this.state.age)
-      },
-      refetchQueries: [{ query: getAuthorsQuery }]
+      } /* ,
+      refetchQueries: [{ query: getAuthorsQuery }] */
     });
   }
 
